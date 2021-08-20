@@ -12,7 +12,7 @@ class Migration(migrations.Migration):
     operations = [
         migrations.AlterModelOptions(
             name='newsstory',
-            options={'ordering': ['-pub_date']},
+            options={'ordering': ['pub_date']},
         ),
         migrations.AddField(
             model_name='newsstory',

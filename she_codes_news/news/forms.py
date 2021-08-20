@@ -8,4 +8,4 @@ class StoryForm(ModelForm):
         model = NewsStory
         fields = ['title', 'author', 'pub_date', 'content']
         widgets = {'pub_date': forms.DateInput(format=(
-        '%m/%d/%Y'), attrs={'class': 'form-control', 'placeholder': 'Selecta date', 'type': 'date'}), }
+            '%m/%d/%Y'), attrs={'class': 'form-control', 'placeholder': 'Selecta date', 'type': 'date'}), }
