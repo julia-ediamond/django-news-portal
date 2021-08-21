@@ -29,3 +29,8 @@ class AddStoryView(generic.CreateView):
     context_object_name = 'storyForm'
     template_name = 'news/createStory.html'
     success_url = reverse_lazy('news:index')
+#overriding form valid whicj is on gerneric createview
+    def form_valid(self, form):
+        #set author to user logged in
+        form.instance.author = self.request.user
+        return super().form_valid(form)
