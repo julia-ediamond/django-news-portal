@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block stylesheets %}
+<link rel="stylesheet" type="text/css" href="{% static 'news/styles.css' %}">
+{% endblock  %}
+{% block content %}
+
+
+<h1>Hi {{ user.username }}!</h1>
+
+<h2>Your stories:</h2>
+<div>
+  {% if story %}
+    {% for story in users %}
+        {% include "./storyCard.html" with story=story position=forloop.counter %}
+    {% endfor %}
+{% else %}
+    <p>You haven't posted any stories</p>
+{% endif %}
+
+</div>
