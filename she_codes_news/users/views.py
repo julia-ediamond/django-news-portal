@@ -3,6 +3,7 @@ from django.views.generic.edit import CreateView
 from django.views import generic
 from news.models import NewsStory
 from .models import CustomUser
+#from .models import Profile
 from .forms import CustomUserCreationForm
 from django.shortcuts import render
 
