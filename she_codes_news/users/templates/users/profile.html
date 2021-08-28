@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block stylesheets %}
+<link rel="stylesheet" type="text/css" href="{% static 'news/styles.css' %}">
+{% endblock  %}
+{% block content %}
+
+<h2>Your profile</h2>
+<h3>Hi {{ user.username }}!</h3>
+
+<h4>Your email: {{ user.email }}</h4>
+
+
+
+{% endblock %}
