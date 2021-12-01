@@ -7,7 +7,9 @@ Styling is yet to be finished.
 # Features implemented
 
 1.Order the stories by date.
+
 2. The form for adding new stories.
+
 3. Add a field to the NewsStory model for an image url and use this image url rather than the default images provided in the starter.
 4. Functional login/logout buttons.
 5. Account view so authors can see their profile information.
